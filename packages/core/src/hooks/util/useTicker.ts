@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useCallbackRef from "./useCallbackRef";
-import game from "../game";
+import game from "../../game";
 
 export default function useTicker(cb: (delta: number) => void) {
 	const staticCb = useCallbackRef(cb);
@@ -11,6 +11,6 @@ export default function useTicker(cb: (delta: number) => void) {
 
 		return () => {
 			game.events.removeListener("tick", staticCb);
-		}
-	}, [])
+		};
+	}, []);
 }

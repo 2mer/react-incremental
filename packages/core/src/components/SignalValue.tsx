@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import type { ReadonlySignal } from "../logic/signal";
+import type { ReadonlySignal } from "../signal";
 
 function SignalValue<T>({
 	signal$,

@@ -1,5 +1,5 @@
-import type { Consumable } from "../../resources/consumable";
-import useTicker from "../useTicker";
+import type { Consumable } from "../resources/consumable";
+import useTicker from "./util/useTicker";
 
 export default function useTransfer<T extends Consumable>(
 	a: T,

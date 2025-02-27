@@ -1,13 +1,11 @@
 import { type PropsWithChildren, useState } from "react";
 import EnergyContext from "./EnergyContext";
-import { Energy } from "../logic/resources/energy";
-
-const ZERO = new Energy(0);
+import { Energy } from "@sgty/hooked";
 
 function EnergySwitch({
 	children,
 	in: inProp,
-	else: elseProp = ZERO,
+	else: elseProp = Energy.ZERO,
 }: PropsWithChildren<{ in: Energy; else?: Energy }>) {
 	const [enabled, setEnabled] = useState(false);
 

@@ -1,5 +1,5 @@
-import { ACCESS_TOKEN, type Consumable } from "../../resources/consumable";
-import useTicker from "../useTicker";
+import { type Consumable, ACCESS_TOKEN } from "../resources";
+import { useTicker } from "./util";
 
 export default function useDrain<T extends Consumable>(
 	consumable: T,

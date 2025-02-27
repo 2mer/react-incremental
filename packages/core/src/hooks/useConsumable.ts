@@ -1,5 +1,5 @@
-import type { Consumable } from "../../resources/consumable";
-import useConst from "../useConst";
+import type { Consumable } from "../resources/consumable";
+import { useConst } from "./util";
 
 export default function useConsumable<T extends typeof Consumable>(
 	ConsumableType: T,

@@ -1,8 +1,8 @@
 import { type PropsWithChildren, useContext } from "react";
 import EnergyContext from "./EnergyContext";
-import { useEngine } from "../logic/hooks/game/engines";
+import { useEngine } from "@sgty/hooked";
 
-function Engine({ children }: PropsWithChildren<{}>) {
+function Engine({ children }: PropsWithChildren) {
 	const energy = useContext(EnergyContext);
 
 	const engine = useEngine(energy);

@@ -2,7 +2,7 @@ import { Energy } from "../../resources/energy";
 import {
 	createSustainedDevice,
 	createSustainedResource,
-} from "../resource/createSustainedResource";
+} from "../createSustainedResource";
 
 export const ENGINES = createSustainedResource();
 

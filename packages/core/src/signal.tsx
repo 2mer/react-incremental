@@ -1,6 +1,6 @@
 import EventEmitter from "eventemitter3";
 import { useEffect, useState } from "react";
-import SignalValue from "../components/SignalValue";
+import SignalValue from "./components/SignalValue";
 
 function identity<T>(v: T): T { return v };
 

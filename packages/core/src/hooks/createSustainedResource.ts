@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import type { Consumable } from "../../resources/consumable";
-import { signal } from "../../signal";
-import useTicker from "../useTicker";
 import useConsumable from "./useConsumable";
 import useTransfer from "./useTransfer";
 import useDrain from "./useDrain";
+import { signal } from "../signal";
+import type { Consumable } from "../resources/consumable";
+import useTicker from "./util/useTicker";
 
 export function createSustainedResource() {
 	const total$ = signal(0);

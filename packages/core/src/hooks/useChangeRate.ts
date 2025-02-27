@@ -1,7 +1,6 @@
 import { useRef } from "react";
-import useSignal from "../useSignal";
-import useTicker from "../useTicker";
-import type { Consumable } from "../../resources/consumable";
+import type { Consumable } from "../resources";
+import { useSignal, useTicker } from "./util";
 
 export default function useChangeRate<T extends Consumable>(consumable: T) {
 	const prevRef = useRef(0);
